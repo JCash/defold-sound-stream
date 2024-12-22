@@ -68,3 +68,46 @@ By mounting a `http` file provider to the `liveupdate` system, it is possible to
 Note that the server as the URL has to support `ranged requests`
 
 
+# Testing
+
+You can build & run the project from the Defold editor, but currently, there is no gui setup.
+So we recommend using the command line to test the various features.
+
+## Build
+
+No special commands are needed:
+
+```bash
+java -jar ~/work/defold/tmp/dynamo_home/share/java/bob.jar clean build
+```
+
+## Run
+
+* .ogg
+* Loading from the file system
+
+```bash
+DM_QUIT_ON_ESC=1 ./path/to/dmengine --config=test.sound_type=Ogg
+```
+
+* .wav
+* Loading from the file system
+
+```bash
+DM_QUIT_ON_ESC=1 ./path/to/dmengine --config=test.sound_type=Wav
+```
+
+
+* Specify url to file server
+* Specify relative path to files on file server
+
+Start a server at `http://localhost:8000`
+```bash
+pip3 install RangeHTTPServer
+(cd path/to/project && python -m RangeHTTPServer)
+```
+
+Run the example, using the `--config` options:
+```bash
+DM_QUIT_ON_ESC=1 ./path/to/dmengine --config=test.sound_type=Web --config=web.url=http://localhost:8000 --config=web.filename=web/mary-had-a-little-lamb-loop.wav
+```
