@@ -51,5 +51,11 @@ embedded_instances {
   "  data: \"collection: \\\"/main/soundWav.collection\\\"\\n"
   "\"\n"
   "}\n"
+  "embedded_components {\n"
+  "  id: \"proxyWeb\"\n"
+  "  type: \"collectionproxy\"\n"
+  "  data: \"collection: \\\"/main/soundWeb.collection\\\"\\n"
+  "\"\n"
+  "}\n"
   ""
 }

@@ -2,7 +2,7 @@
 title = SoundStreaming
 
 [bootstrap]
-main_collection = /main/soundWeb.collectionc
+main_collection = /main/main.collectionc
 
 [input]
 game_binding = /input/game.input_bindingc
@@ -35,7 +35,6 @@ scale_mode = stretch
 
 [sound]
 stream_enabled = 1
-_stream_preload_size = 131072
 stream_preload_size = 16384
 
 [liveupdate]
