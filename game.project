@@ -1,5 +1,6 @@
 [project]
 title = SoundStreaming
+dependencies#0 = https://github.com/andsve/dirtylarry/archive/refs/heads/master.zip
 
 [bootstrap]
 main_collection = /main/main.collectionc
