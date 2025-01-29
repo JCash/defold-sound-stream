@@ -57,7 +57,7 @@ function on_message(self, message_id, message)
 					load_web_sound(self.url, self.filename)
 				end)
 		else
-			print("Playing web sound:", msg.url(), message.source, message.sound_type)
+			print("Playing " .. message.source .. " sound:", msg.url(), message.source, message.sound_type)
 			sound.play(self.component)
 		end
 	end

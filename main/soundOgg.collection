@@ -4,7 +4,7 @@ embedded_instances {
   id: "sounds"
   data: "components {\n"
   "  id: \"test\"\n"
-  "  component: \"/main/test.script\"\n"
+  "  component: \"/main/sound.script\"\n"
   "}\n"
   "embedded_components {\n"
   "  id: \"music\"\n"
